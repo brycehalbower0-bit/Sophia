@@ -128,12 +128,21 @@
   .edu-line { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
   .edu-line .what { font-weight: 600; }
 
-  /* ---------- Print ---------- */
+  /* ---------- Print (tuned to fit one page) ---------- */
   @media print {
-    html, body { background: #fff; font-size: 12.5px; }
-    .page { box-shadow: none; margin: 0; max-width: none; padding: 0.4in 0.5in; }
+    html, body { background: #fff; font-size: 11px; line-height: 1.33; }
+    .page { box-shadow: none; margin: 0; max-width: none; padding: 0.35in 0.45in; }
     a { color: var(--ink) !important; }
-    section { margin-top: 14px; }
+    h1 { font-size: 25px; }
+    .title { font-size: 12.5px; margin: 3px 0 7px; }
+    .contact { font-size: 11px; }
+    section { margin-top: 11px; }
+    h2 { margin-bottom: 7px; break-after: avoid; }
+    .summary { line-height: 1.4; }
+    .skills-grid { row-gap: 6px; grid-template-columns: 150px 1fr; }
+    .entry { margin-bottom: 9px; break-inside: avoid; }
+    ul.bullets { margin-top: 4px; }
+    ul.bullets li { margin-bottom: 2px; }
     .tag { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   }
 

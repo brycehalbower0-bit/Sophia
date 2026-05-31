@@ -1,0 +1,102 @@
+BRYCE HALBOWER
+Hardware & Software Systems Engineer
+Marquette, Michigan | 616-498-7672 | brycehalbower0@gmail.com
+
+
+ABOUT ME
+-------------------------------------------------------------------------------
+I'm a hardware and software engineer who loves taking an idea all the way to a
+working system - building the machine, wiring the network, and writing the code
+and automation that bring it to life. What drives me most is learning: I teach
+myself whatever a project needs and pick up new tools quickly, because every
+small business I work with has its own problems worth solving. I handle the
+whole stack myself - hardware, networking, cloud, and the iOS and Windows apps
+on top - and tailor each build to the people who'll actually use it. Whether as
+a full-time engineer on a team or an independent contractor, I'm at my best when
+I'm creating something genuinely useful and reliable, and getting better at the
+craft with every project.
+
+
+TECHNICAL SKILLS
+-------------------------------------------------------------------------------
+Languages:             Python, JavaScript / TypeScript, C# / .NET, Swift, SQL
+
+Web & App Development:  React + TypeScript (Vite), Tailwind CSS, shadcn/ui &
+                        Radix UI, hand-coded HTML & CSS; native iOS apps (Swift)
+                        and Windows desktop apps (C# / .NET)
+
+Backend, Data & APIs:   Node.js / Express REST APIs, Drizzle ORM, SQLite /
+                        PostgreSQL / MySQL, Zod validation, TanStack Query,
+                        WebSockets; session auth, CSRF & rate limiting;
+                        Square & Stripe payments; Resend / Nodemailer email
+
+Cloud, Testing & Tools: Cloudflare Workers / Pages / D1; Render deployment &
+                        hosting; Vitest, Playwright (E2E) & Testing Library;
+                        ESLint; Git / GitHub; CI (lint / typecheck / test /
+                        build); Windows Server & Linux administration
+
+Networking & Security:  Ubiquiti UniFi deployment & configuration; VLANs,
+                        firewall, VPN, DNS; PoE / IP surveillance camera systems;
+                        NAS & cloud-synced backup; firmware security updates
+
+Hardware:               Custom PC & purpose-built system builds; component-level
+                        diagnosis, repair & soldering; multimeter / oscilloscope;
+                        microcontrollers (Arduino / Raspberry Pi); BIOS/UEFI
+
+
+EXPERIENCE
+-------------------------------------------------------------------------------
+Freelance Hardware & Software Engineer | Self-Employed          2024 - Present
+Marquette & Grand Rapids, Michigan
+ - Design and deliver complete hardware + software systems for small businesses,
+   owning every layer from physical build and network deployment to control
+   software and cloud automation.
+ - Build and configure custom PCs, purpose-built systems, and on-site servers;
+   deploy Ubiquiti networks with PoE security cameras and automated firmware
+   updates.
+ - Develop companion iOS and Windows applications that act as operator-facing
+   controllers for the systems deployed.
+
+
+SELECTED PROJECTS
+-------------------------------------------------------------------------------
+Scheduling, Inventory & POS Platform | VReality - VR Arcade (Contract)     2024
+Grand Rapids, Michigan
+ - Built custom scheduling and inventory management systems, backed by a SQL
+   database, to run day-to-day arcade operations.
+ - Integrated point-of-sale checkout using the Square API.
+ - Delivered companion iOS (Swift) and Windows (C# / .NET) control apps so staff
+   could manage bookings and inventory across devices.
+
+Network, Server & Inventory System | Cash for Goods - Pawnshop      2024 - 2025
+ - Designed and deployed a Ubiquiti UniFi mesh network covering the full
+   location.
+ - Stood up an on-site server (Windows Server / Linux) with cloud-synced backup,
+   serving as a NAS and hosting the SQL product & pricing database.
+ - Built iOS (Swift) and Windows (C# / .NET) controller apps for managing
+   inventory and pricing.
+
+Websites for Local Artists | Independent                            2024 - 2026
+ - Designed, built, and deployed responsive websites for multiple local artists
+   with hand-coded HTML & CSS, including susangrantart.com.
+ - Handled domain registration, hosting, and end-to-end deployment.
+
+Full-Stack Engineering Lab | Self-Directed (Personal Project)           Ongoing
+ - Self-directed lab where I learn, prototype, and pressure-test production-grade
+   techniques before applying them to client work.
+ - Built a full-stack inventory & management web app: React + TypeScript (Vite),
+   shadcn/ui + Tailwind front end, Express / Node REST API, and Drizzle ORM over
+   SQLite.
+ - Implemented authentication and security from scratch - bcrypt password
+   hashing, session management, CSRF protection, rate limiting, and role /
+   clearance-based access control.
+ - Integrated Square payments and real-time updates over WebSockets; safeguarded
+   quality with a Vitest + Playwright (E2E) test suite and a CI pipeline (lint,
+   typecheck, test, build), deployed on Render.
+
+
+EDUCATION
+-------------------------------------------------------------------------------
+Coursework in Web & Application Development | Northern Michigan University
+ - Self-directed study in cloud platforms, databases, and automation, applied
+   directly to client systems in production.
