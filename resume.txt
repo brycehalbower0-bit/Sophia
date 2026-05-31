@@ -7,11 +7,11 @@ ABOUT ME
 -------------------------------------------------------------------------------
 I'm a hardware and software engineer who takes an idea all the way to a working
 system - building the machine, wiring the network, and writing the code and
-automation that bring it to life. Driven by a love of learning, I teach myself
-whatever a project needs and handle the whole stack myself, tailoring each build
-to the small businesses and people who'll actually use it. Whether on a team or
-as an independent contractor, I'm at my best creating something genuinely useful
-and reliable - and getting better at the craft with every project.
+automation that bring it to life. As the sole engineer on every project, I
+teach myself whatever a build needs and own the whole stack, tailoring each one
+to the small businesses and people who'll actually use it. I'm at my best
+creating something genuinely useful and reliable - and getting better at the
+craft with every project.
 
 
 TECHNICAL SKILLS
@@ -22,15 +22,17 @@ Web & App Development:  React + TypeScript (Vite), Tailwind CSS, shadcn/ui &
                         Radix UI, hand-coded HTML & CSS; native iOS apps (Swift)
                         and Windows desktop apps (C# / .NET)
 
-Backend, Data & APIs:   Node.js / Express REST APIs, Drizzle ORM, SQLite /
-                        PostgreSQL / MySQL, Zod validation, TanStack Query,
-                        WebSockets; session auth, CSRF & rate limiting;
-                        Square & Stripe payments; Resend / Nodemailer email
+Backend, Data & APIs:   Node.js / Express & Hono REST APIs; Cloudflare Workers
+                        edge runtime; server-side rendering via HTMLRewriter;
+                        Drizzle ORM; SQLite / PostgreSQL / MySQL / D1; Zod,
+                        TanStack Query, WebSockets; Square & Stripe payments;
+                        Resend / Nodemailer email; session & JWT auth (Web
+                        Crypto), HMAC-verified webhooks, CSRF & rate limiting
 
-Cloud, Testing & Tools: Cloudflare Workers / Pages / D1; Render deployment &
-                        hosting; Vitest, Playwright (E2E) & Testing Library;
-                        ESLint; Git / GitHub; CI (lint / typecheck / test /
-                        build); Windows Server & Linux administration
+Cloud, Testing & Tools: Cloudflare Pages / Workers / D1 / KV / R2; Render
+                        deployment & hosting; Vitest, Playwright (E2E) & Testing
+                        Library; ESLint; Git / GitHub; CI (lint / typecheck /
+                        test / build); Windows Server & Linux administration
 
 Networking & Security:  Ubiquiti UniFi deployment & configuration; VLANs,
                         firewall, VPN, DNS; PoE / IP surveillance camera systems;
@@ -45,54 +47,65 @@ EXPERIENCE
 -------------------------------------------------------------------------------
 Freelance Hardware & Software Engineer | Self-Employed          2024 - Present
 Marquette & Grand Rapids, Michigan
- - Design and deliver complete hardware + software systems for small businesses,
-   owning every layer from physical build and network deployment to control
-   software and cloud automation.
+ - Sole engineer delivering complete hardware + software systems for small
+   businesses - owning every layer from physical build and network deployment to
+   application code, cloud automation, and ongoing support.
  - Build and configure custom PCs, purpose-built systems, and on-site servers;
    deploy Ubiquiti networks with PoE security cameras and automated firmware
    updates.
  - Develop companion iOS and Windows applications that act as operator-facing
-   controllers for the systems deployed.
+   controllers, and modernize legacy web apps onto serverless edge
+   infrastructure.
 
 
 SELECTED PROJECTS
 -------------------------------------------------------------------------------
+Edge-Native Gallery & Storefront | susangrantart.com (Contract)     2024 - 2026
+ - Re-architected the site from a Render / Express app onto Cloudflare's
+   serverless edge - Pages + Functions (Hono router) backed by D1 (relational),
+   KV (catalog cache), and R2 (image storage) - with a zero-downtime DNS
+   cutover; now runs entirely on free tier at $0/month.
+ - Server-side render the gallery with streaming HTMLRewriter from a Square-
+   backed catalog (KV-cached), with on-site checkout via the Square Web Payments
+   SDK and a hand-rolled Square REST client built for the edge runtime.
+ - Built security from primitives on Web Crypto: JWT-cookie admin auth, HMAC-
+   verified Square webhooks, double-submit-cookie CSRF, CSP + security headers,
+   rate limiting, audit logging, Zod-validated config, and magic-byte upload
+   checks.
+ - Shipped a self-service admin dashboard so the artist manages her own catalog,
+   categories, bio, imagery, and pricing; also hand-coded responsive sites for
+   other local artists and handled domain, hosting, and deployment end-to-end.
+
 Scheduling, Inventory & POS Platform | VReality - VR Arcade (Contract)     2024
 Grand Rapids, Michigan
- - Built custom scheduling and inventory management systems, backed by a SQL
-   database, to run day-to-day arcade operations.
- - Integrated point-of-sale checkout using the Square API.
+ - Built a scheduling, inventory, and point-of-sale platform on an on-site server
+   with a SQL database, unifying session booking and Square checkout into a
+   single staff workflow.
  - Delivered companion iOS (Swift) and Windows (C# / .NET) control apps so staff
    could manage bookings and inventory across devices.
+ - Designed the interface to be simple enough for new, often high-school-aged
+   hires to pick up quickly with minimal training.
 
 Network, Server & Inventory System | Cash for Goods - Pawnshop      2024 - 2025
- - Designed and deployed a Ubiquiti UniFi mesh network covering the full
-   location.
- - Stood up an on-site server (Windows Server / Linux) with cloud-synced backup,
-   serving as a NAS and hosting the SQL product & pricing database.
- - Built iOS (Swift) and Windows (C# / .NET) controller apps for managing
-   inventory and pricing.
-
-Websites for Local Artists | Independent                            2024 - 2026
- - Designed, built, and deployed responsive, hand-coded sites (HTML / CSS / JS)
-   for multiple local artists, including susangrantart.com - fixed navigation,
-   mobile menus, and curated galleries of available and sold work.
- - Built a password-protected admin dashboard so artists manage their own content
-   - create / edit / delete pieces, upload images, and update bio and pricing -
-   backed by a REST API.
- - Handled domain registration, hosting, and end-to-end deployment.
+ - Designed and deployed a whole-building Ubiquiti UniFi network with PoE IP
+   surveillance cameras.
+ - Stood up an on-site Windows Server / Linux NAS hosting the SQL product &
+   pricing database with cloud-synced backup, keeping the business's data
+   in-house and recoverable.
+ - Built iOS (Swift) and Windows (C# / .NET) apps for inventory and pricing that
+   timestamp each sale to line up with register camera footage - an audit and
+   loss-prevention trail.
 
 Full-Stack Engineering Lab | Self-Directed (Personal Project)           Ongoing
- - Self-directed lab where I learn, prototype, and pressure-test production-grade
-   techniques before applying them to client work.
- - Built a full-stack inventory & management web app: React + TypeScript (Vite),
-   shadcn/ui + Tailwind front end, Express / Node REST API, and Drizzle ORM over
-   SQLite.
- - Implemented authentication and security from scratch - bcrypt password
-   hashing, session management, CSRF protection, rate limiting, and role /
-   clearance-based access control.
- - Integrated Square payments and real-time updates over WebSockets; safeguarded
-   quality with a Vitest + Playwright (E2E) test suite and a CI pipeline (lint,
+ - Self-directed lab to learn, prototype, and pressure-test production-grade
+   techniques before applying them to client work - a full-stack inventory &
+   management app: React + TypeScript (Vite), shadcn/ui + Tailwind, Express /
+   Node REST API, and Drizzle ORM over SQLite.
+ - Implemented auth and security from scratch - bcrypt hashing, session
+   management, CSRF protection, rate limiting, and role / clearance-based access
+   control.
+ - Integrated Square payments and real-time WebSocket updates; safeguarded
+   quality with a Vitest + Playwright (E2E) suite and a CI pipeline (lint,
    typecheck, test, build), deployed on Render.
 
 

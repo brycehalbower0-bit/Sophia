@@ -176,12 +176,12 @@
       <p class="summary">
         I'm a hardware and software engineer who takes an idea all the way to a
         working system &mdash; building the machine, wiring the network, and
-        writing the code and automation that bring it to life. Driven by a love
-        of learning, I teach myself whatever a project needs and handle the whole
-        stack myself, tailoring each build to the small businesses and people
-        who'll actually use it. Whether on a team or as an independent contractor,
-        I'm at my best creating something genuinely useful and reliable &mdash;
-        and getting better at the craft with every project.
+        writing the code and automation that bring it to life. As the sole
+        engineer on every project, I teach myself whatever a build needs and own
+        the whole stack, tailoring each one to the small businesses and people
+        who'll actually use it. I'm at my best creating something genuinely
+        useful and reliable &mdash; and getting better at the craft with every
+        project.
       </p>
     </section>
 
@@ -198,13 +198,15 @@
           apps (C# / .NET)</div>
 
         <div class="cat">Backend, Data &amp; APIs</div>
-        <div class="val">Node.js / Express REST APIs, Drizzle ORM, SQLite / PostgreSQL /
-          MySQL, Zod validation, TanStack Query, WebSockets; session auth, CSRF &amp;
-          rate limiting; Square &amp; Stripe payments; Resend / Nodemailer email</div>
+        <div class="val">Node.js / Express &amp; Hono REST APIs; Cloudflare Workers edge
+          runtime; server-side rendering via HTMLRewriter; Drizzle ORM; SQLite /
+          PostgreSQL / MySQL / D1; Zod, TanStack Query, WebSockets; Square &amp; Stripe
+          payments; Resend / Nodemailer email; session &amp; JWT auth (Web Crypto),
+          HMAC-verified webhooks, CSRF &amp; rate limiting</div>
 
         <div class="cat">Cloud, Testing &amp; Tooling</div>
-        <div class="val">Cloudflare Workers / Pages / D1; Render deployment &amp; hosting;
-          Vitest, Playwright (E2E) &amp; Testing Library; ESLint; Git / GitHub; CI
+        <div class="val">Cloudflare Pages / Workers / D1 / KV / R2; Render deployment &amp;
+          hosting; Vitest, Playwright (E2E) &amp; Testing Library; ESLint; Git / GitHub; CI
           (lint / typecheck / test / build); Windows Server &amp; Linux administration</div>
 
         <div class="cat">Networking &amp; Security</div>
@@ -231,14 +233,16 @@
         </div>
         <div class="place">Marquette &amp; Grand Rapids, Michigan</div>
         <ul class="bullets">
-          <li>Design and deliver complete hardware + software systems for small
-            businesses, owning every layer from physical build and network
-            deployment to control software and cloud automation.</li>
+          <li>Sole engineer delivering complete hardware + software systems for
+            small businesses &mdash; owning every layer from physical build and
+            network deployment to application code, cloud automation, and ongoing
+            support.</li>
           <li>Build and configure custom PCs, purpose-built systems, and on-site
             servers; deploy Ubiquiti networks with PoE security cameras and
             automated firmware updates.</li>
           <li>Develop companion iOS and Windows applications that act as
-            operator-facing controllers for the systems deployed.</li>
+            operator-facing controllers, and modernize legacy web apps onto
+            serverless edge infrastructure.</li>
         </ul>
       </div>
     </section>
@@ -249,6 +253,33 @@
 
       <div class="entry">
         <div class="entry-head">
+          <div><span class="role">Edge-Native Gallery &amp; Storefront</span>
+            &nbsp;&middot;&nbsp; <span class="org"><a href="https://susangrantart.com">susangrantart.com</a></span>
+            <span class="tag">Contract</span></div>
+          <div class="dates">2024 &ndash; 2026</div>
+        </div>
+        <ul class="bullets">
+          <li>Re-architected the site from a Render / Express app onto Cloudflare's
+            serverless edge &mdash; Pages + Functions (Hono router) backed by D1
+            (relational), KV (catalog cache), and R2 (image storage) &mdash; with a
+            zero-downtime DNS cutover; now runs entirely on free tier at $0/month.</li>
+          <li>Server-side render the gallery with streaming HTMLRewriter from a
+            Square-backed catalog (KV-cached), with on-site checkout via the Square
+            Web Payments SDK and a hand-rolled Square REST client built for the edge
+            runtime.</li>
+          <li>Built security from primitives on Web Crypto: JWT-cookie admin auth,
+            HMAC-verified Square webhooks, double-submit-cookie CSRF, CSP + security
+            headers, rate limiting, audit logging, Zod-validated config, and
+            magic-byte upload checks.</li>
+          <li>Shipped a self-service admin dashboard so the artist manages her own
+            catalog, categories, bio, imagery, and pricing; also hand-coded
+            responsive sites for other local artists and handled domain, hosting,
+            and deployment end-to-end.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
           <div><span class="role">Scheduling, Inventory &amp; POS Platform</span>
             &nbsp;&middot;&nbsp; <span class="org">VReality &mdash; VR Arcade</span>
             <span class="tag">Contract</span></div>
@@ -256,11 +287,13 @@
         </div>
         <div class="place">Grand Rapids, Michigan</div>
         <ul class="bullets">
-          <li>Built custom scheduling and inventory management systems, backed by
-            a SQL database, to run day-to-day arcade operations.</li>
-          <li>Integrated point-of-sale checkout using the Square API.</li>
+          <li>Built a scheduling, inventory, and point-of-sale platform on an
+            on-site server with a SQL database, unifying session booking and Square
+            checkout into a single staff workflow.</li>
           <li>Delivered companion iOS (Swift) and Windows (C# / .NET) control apps
             so staff could manage bookings and inventory across devices.</li>
+          <li>Designed the interface to be simple enough for new, often
+            high-school-aged hires to pick up quickly with minimal training.</li>
         </ul>
       </div>
 
@@ -271,32 +304,14 @@
           <div class="dates">2024 &ndash; 2025</div>
         </div>
         <ul class="bullets">
-          <li>Designed and deployed a Ubiquiti UniFi mesh network covering the full
-            location.</li>
-          <li>Stood up an on-site server (Windows Server / Linux) with cloud-synced
-            backup, serving as a NAS and hosting the SQL product &amp; pricing
-            database.</li>
-          <li>Built iOS (Swift) and Windows (C# / .NET) controller apps for managing
-            inventory and pricing.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head">
-          <div><span class="role">Websites for Local Artists</span>
-            &nbsp;&middot;&nbsp; <span class="org">Independent</span></div>
-          <div class="dates">2024 &ndash; 2026</div>
-        </div>
-        <ul class="bullets">
-          <li>Designed, built, and deployed responsive, hand-coded sites
-            (HTML / CSS / JS) for multiple local artists, including
-            <a href="https://susangrantart.com">susangrantart.com</a> &mdash; fixed
-            navigation, mobile menus, and curated galleries of available and sold
-            work.</li>
-          <li>Built a password-protected admin dashboard so artists manage their own
-            content &mdash; create / edit / delete pieces, upload images, and update
-            bio and pricing &mdash; backed by a REST API.</li>
-          <li>Handled domain registration, hosting, and end-to-end deployment.</li>
+          <li>Designed and deployed a whole-building Ubiquiti UniFi network with PoE
+            IP surveillance cameras.</li>
+          <li>Stood up an on-site Windows Server / Linux NAS hosting the SQL product
+            &amp; pricing database with cloud-synced backup, keeping the business's
+            data in-house and recoverable.</li>
+          <li>Built iOS (Swift) and Windows (C# / .NET) apps for inventory and
+            pricing that timestamp each sale to line up with register camera footage
+            &mdash; an audit and loss-prevention trail.</li>
         </ul>
       </div>
 
@@ -308,17 +323,17 @@
           <div class="dates">Ongoing</div>
         </div>
         <ul class="bullets">
-          <li>Self-directed lab where I learn, prototype, and pressure-test
-            production-grade techniques before applying them to client work.</li>
-          <li>Built a full-stack inventory &amp; management web app: React + TypeScript
-            (Vite), shadcn/ui + Tailwind front end, Express / Node REST API, and
-            Drizzle ORM over SQLite.</li>
-          <li>Implemented authentication and security from scratch &mdash; bcrypt
-            password hashing, session management, CSRF protection, rate limiting,
-            and role / clearance-based access control.</li>
-          <li>Integrated Square payments and real-time updates over WebSockets;
-            safeguarded quality with a Vitest + Playwright (E2E) test suite and a
-            CI pipeline (lint, typecheck, test, build), deployed on Render.</li>
+          <li>Self-directed lab to learn, prototype, and pressure-test
+            production-grade techniques before applying them to client work &mdash;
+            a full-stack inventory &amp; management app: React + TypeScript (Vite),
+            shadcn/ui + Tailwind, Express / Node REST API, and Drizzle ORM over
+            SQLite.</li>
+          <li>Implemented auth and security from scratch &mdash; bcrypt hashing,
+            session management, CSRF protection, rate limiting, and role /
+            clearance-based access control.</li>
+          <li>Integrated Square payments and real-time WebSocket updates;
+            safeguarded quality with a Vitest + Playwright (E2E) suite and a CI
+            pipeline (lint, typecheck, test, build), deployed on Render.</li>
         </ul>
       </div>
     </section>
