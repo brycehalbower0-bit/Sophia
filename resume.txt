@@ -74,8 +74,12 @@ Network, Server & Inventory System | Cash for Goods - Pawnshop      2024 - 2025
    inventory and pricing.
 
 Websites for Local Artists | Independent                            2024 - 2026
- - Designed, built, and deployed responsive websites for multiple local artists
-   with hand-coded HTML & CSS, including susangrantart.com.
+ - Designed, built, and deployed responsive, hand-coded sites (HTML / CSS / JS)
+   for multiple local artists, including susangrantart.com - fixed navigation,
+   mobile menus, and curated galleries of available and sold work.
+ - Built a password-protected admin dashboard so artists manage their own content
+   - create / edit / delete pieces, upload images, and update bio and pricing -
+   backed by a REST API.
  - Handled domain registration, hosting, and end-to-end deployment.
 
 Full-Stack Engineering Lab | Self-Directed (Personal Project)           Ongoing
