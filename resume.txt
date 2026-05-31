@@ -5,16 +5,13 @@ Marquette, Michigan | 616-498-7672 | brycehalbower0@gmail.com
 
 ABOUT ME
 -------------------------------------------------------------------------------
-I'm a hardware and software engineer who loves taking an idea all the way to a
-working system - building the machine, wiring the network, and writing the code
-and automation that bring it to life. What drives me most is learning: I teach
-myself whatever a project needs and pick up new tools quickly, because every
-small business I work with has its own problems worth solving. I handle the
-whole stack myself - hardware, networking, cloud, and the iOS and Windows apps
-on top - and tailor each build to the people who'll actually use it. Whether as
-a full-time engineer on a team or an independent contractor, I'm at my best when
-I'm creating something genuinely useful and reliable, and getting better at the
-craft with every project.
+I'm a hardware and software engineer who takes an idea all the way to a working
+system - building the machine, wiring the network, and writing the code and
+automation that bring it to life. Driven by a love of learning, I teach myself
+whatever a project needs and handle the whole stack myself, tailoring each build
+to the small businesses and people who'll actually use it. Whether on a team or
+as an independent contractor, I'm at my best creating something genuinely useful
+and reliable - and getting better at the craft with every project.
 
 
 TECHNICAL SKILLS
