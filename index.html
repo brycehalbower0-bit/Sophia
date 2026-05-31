@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bryce Halbower — Hardware &amp; Software Systems Engineer</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --muted: #555;
+    --accent: #1f5673;     /* deep slate-teal */
+    --accent-soft: #e8eef2;
+    --rule: #d7dde1;
+    --page: #ffffff;
+    --bg: #f4f6f8;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 8.5in;
+    margin: 24px auto;
+    background: var(--page);
+    padding: 0.7in 0.75in 0.6in;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.10);
+  }
+
+  /* ---------- Header ---------- */
+  header { border-bottom: 3px solid var(--accent); padding-bottom: 14px; }
+
+  h1 {
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .title {
+    margin: 4px 0 10px;
+    font-size: 15.5px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    font-size: 13.5px;
+    color: var(--muted);
+  }
+  .contact a { color: var(--muted); text-decoration: none; }
+  .contact a:hover { color: var(--accent); text-decoration: underline; }
+  .contact span.sep { color: var(--rule); }
+
+  /* ---------- Sections ---------- */
+  section { margin-top: 20px; }
+
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--accent);
+    margin: 0 0 10px;
+    padding-bottom: 4px;
+    border-bottom: 1.5px solid var(--rule);
+  }
+
+  .summary { margin: 0; color: #2a2a2a; }
+
+  /* ---------- Skills ---------- */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    row-gap: 9px;
+    column-gap: 14px;
+  }
+  .skills-grid .cat { font-weight: 700; color: var(--ink); }
+  .skills-grid .val { color: #333; }
+
+  /* ---------- Experience ---------- */
+  .entry { margin-bottom: 16px; }
+  .entry:last-child { margin-bottom: 0; }
+
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .role { font-weight: 700; font-size: 15.5px; }
+  .org  { font-weight: 600; color: var(--accent); }
+  .dates { color: var(--muted); font-size: 13px; white-space: nowrap; }
+  .place { color: var(--muted); font-size: 13px; font-style: italic; margin: 1px 0 6px; }
+
+  ul.bullets { margin: 6px 0 0; padding-left: 18px; }
+  ul.bullets li { margin-bottom: 4px; }
+
+  .tag {
+    display: inline-block;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: 11.5px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 1px 9px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  /* ---------- Education ---------- */
+  .edu-line { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+  .edu-line .what { font-weight: 600; }
+
+  /* ---------- Print ---------- */
+  @media print {
+    html, body { background: #fff; font-size: 12.5px; }
+    .page { box-shadow: none; margin: 0; max-width: none; padding: 0.4in 0.5in; }
+    a { color: var(--ink) !important; }
+    section { margin-top: 14px; }
+    .tag { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 28px 20px; }
+    h1 { font-size: 27px; }
+    .skills-grid { grid-template-columns: 1fr; row-gap: 2px; }
+    .skills-grid .cat { margin-top: 8px; }
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ============ HEADER ============ -->
+    <header>
+      <h1>Bryce Halbower</h1>
+      <div class="title">Hardware &amp; Software Systems Engineer</div>
+      <div class="contact">
+        <span>Marquette, Michigan</span>
+        <span class="sep">|</span>
+        <a href="tel:+16164987672">616-498-7672</a>
+        <span class="sep">|</span>
+        <a href="mailto:brycehalbower0@gmail.com">brycehalbower0@gmail.com</a>
+        <!-- Add when ready:
+        <span class="sep">|</span>
+        <a href="https://github.com/your-handle">github.com/your-handle</a>
+        <span class="sep">|</span>
+        <a href="https://linkedin.com/in/your-handle">LinkedIn</a>
+        -->
+      </div>
+    </header>
+
+    <!-- ============ SUMMARY ============ -->
+    <section>
+      <h2>Summary</h2>
+      <p class="summary">
+        Hands-on hardware and software engineer who designs, builds, and deploys
+        complete systems &mdash; from custom-built machines and networking
+        infrastructure to the cloud automation and control software that runs
+        them. Track record delivering end-to-end solutions for small businesses:
+        point-of-sale and inventory platforms, Ubiquiti networks with security
+        camera deployments, on-site servers with cloud-synced backup, and
+        cross-platform (iOS + Windows) control applications. Comfortable
+        soldering a board, racking a switch, and shipping the code that ties it
+        all together.
+      </p>
+    </section>
+
+    <!-- ============ TECHNICAL SKILLS ============ -->
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="cat">Hardware &amp; Systems</div>
+        <div class="val">Custom PC &amp; purpose-built system builds, component-level
+          diagnosis &amp; repair, soldering, microcontrollers (Arduino / Raspberry Pi),
+          BIOS/UEFI configuration</div>
+
+        <div class="cat">Networking &amp; Security</div>
+        <div class="val">Ubiquiti UniFi (mesh, managed switches, PoE), IP / PoE
+          surveillance camera systems, network design &amp; segmentation, firmware
+          security auto-updates, NAS</div>
+
+        <div class="cat">Software &amp; Apps</div>
+        <div class="val">iOS application development, Windows application development,
+          scripting &amp; automation (PowerShell, Bash, Python)</div>
+
+        <div class="cat">Cloud &amp; Automation</div>
+        <div class="val">Cloudflare Workers &amp; Pages, databases, on-site &harr; cloud
+          backup sync, inventory &amp; server automation, Resend email automation,
+          domain registration &amp; hosting</div>
+
+        <div class="cat">Integrations &amp; APIs</div>
+        <div class="val">Square POS API, REST APIs, third-party system integration</div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role">Freelance Hardware &amp; Software Engineer</span>
+            &nbsp;&middot;&nbsp; <span class="org">Self-Employed</span></div>
+          <div class="dates">2024 &ndash; Present</div>
+        </div>
+        <div class="place">Marquette &amp; Grand Rapids, Michigan</div>
+        <ul class="bullets">
+          <li>Design and deliver complete hardware + software systems for small
+            businesses, owning every layer from physical build and network
+            deployment to control software and cloud automation.</li>
+          <li>Build and configure custom PCs, purpose-built systems, and on-site
+            servers; deploy Ubiquiti networks with PoE security cameras and
+            automated firmware updates.</li>
+          <li>Develop companion iOS and Windows applications that act as
+            operator-facing controllers for the systems deployed.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED PROJECTS ============ -->
+    <section>
+      <h2>Selected Projects</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role">Scheduling, Inventory &amp; POS Platform</span>
+            &nbsp;&middot;&nbsp; <span class="org">VReality &mdash; VR Arcade</span>
+            <span class="tag">Contract</span></div>
+          <div class="dates">2024</div>
+        </div>
+        <div class="place">Grand Rapids, Michigan</div>
+        <ul class="bullets">
+          <li>Built custom scheduling and inventory management systems to run
+            day-to-day arcade operations.</li>
+          <li>Integrated point-of-sale checkout using the Square API.</li>
+          <li>Delivered companion iOS and Windows control apps so staff could
+            manage bookings and inventory across devices.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role">Network, Server &amp; Inventory System</span>
+            &nbsp;&middot;&nbsp; <span class="org">Cash for Goods &mdash; Pawnshop</span></div>
+          <div class="dates">2024 &ndash; 2025</div>
+        </div>
+        <ul class="bullets">
+          <li>Designed and deployed a Ubiquiti mesh network covering the full
+            location.</li>
+          <li>Stood up an on-site server with cloud-synced backup, serving as a
+            NAS and as the product &amp; pricing database.</li>
+          <li>Built iOS and Windows controller apps for managing inventory and
+            pricing.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <div><span class="role">Websites for Local Artists</span>
+            &nbsp;&middot;&nbsp; <span class="org">Independent</span></div>
+          <div class="dates">2024 &ndash; 2026</div>
+        </div>
+        <ul class="bullets">
+          <li>Designed, built, and deployed websites for multiple local artists,
+            including <a href="https://susangrantart.com">susangrantart.com</a>.</li>
+          <li>Handled domain registration, hosting, and end-to-end deployment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section>
+      <h2>Education</h2>
+      <div class="edu-line">
+        <div class="what">Coursework in Web &amp; Application Development</div>
+        <!-- Replace with your school name and years when ready -->
+        <div class="dates">[School / College]</div>
+      </div>
+      <ul class="bullets">
+        <li>Self-directed study in cloud platforms, databases, and automation,
+          applied directly to client systems in production.</li>
+      </ul>
+    </section>
+
+  </div>
+</body>
+</html>
